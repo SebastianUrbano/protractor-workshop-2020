@@ -24,7 +24,9 @@
     "url": "https://github.com/SebastianUrbano/protractor-workshop-2020/issues"
   },
   "homepage": "https://github.com/SebastianUrbano/protractor-workshop-2020#readme",
-  "dependencies": {},
+  "dependencies": {
+    "jasmine-spec-reporter": "^5.0.2"
+  },
   "devDependencies": {
     "@types/jasminewd2": "^2.0.8",
     "@types/node": "^14.0.27",
