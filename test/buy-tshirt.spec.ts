@@ -15,9 +15,6 @@ describe('Buy a t-shirt', () => {
   const password: string = 'WorkshopProtractor';
   const signInStepPage: SignInStepPage = new SignInStepPage(email, password);
   const summaryStepPage: SummaryStepPage = new SummaryStepPage();
-  beforeEach(() => {
-    jasmine.DEFAULT_TIMEOUT_INTERVAL = 120000;
-  });
 
   it('then should be bought a t-shirt', async () => {
     await browser.get('http://automationpractice.com/');

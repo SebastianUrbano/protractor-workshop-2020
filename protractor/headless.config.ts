@@ -9,11 +9,14 @@ export const config: Config = {
     browser.ignoreSynchronization = true;
     reporter();
   },
+  jasmineNodeOpts: {
+    defaultTimeoutInterval: 120000
+  },
   capabilities: {
     browserName: 'chrome',
     chromeOptions: {
       args: ['--headless', '--disable-gpu']
     }
   },
-  getPageTimeout: 1000
+  getPageTimeout: 30000
 };
