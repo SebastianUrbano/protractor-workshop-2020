@@ -8,6 +8,10 @@ export const config: Config = {
   onPrepare: () => {
     browser.ignoreSynchronization = true;
     reporter();
+    browser.manage().timeouts().implicitlyWait(5000);
+  },
+  jasmineNodeOpts: {
+    defaultTimeoutInterval: 120000
   },
   capabilities: {
     browserName: 'chrome',
@@ -15,5 +19,5 @@ export const config: Config = {
       args: ['--headless', '--disable-gpu']
     }
   },
-  getPageTimeout: 1000
+  getPageTimeout: 30000
 };
